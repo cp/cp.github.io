@@ -18,7 +18,7 @@
     }
 
     html { height: 100%; }
-    body { background: black; height: 100%; }
+    body { background: black; height: 100%; overflow: hidden; }
 
     .container {
       display: flex;
@@ -34,15 +34,15 @@
 
     .name {
       font-family: "hawkeye";
+      font-weight: 100;
       transform: rotate(-15deg);
-      color: #269cff;
+      color: #4078c0;
       margin: 0;
       line-height: 22vw;
       font-size: 22vw;
-    }
-
-    .line-one {
-      transform: rotate(-15deg) translateX(-38px) translateY(-10px);
+      background: -webkit-linear-gradient(#4078c0, black);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     @keyframes animate-in-up {
@@ -96,8 +96,8 @@
       transform: scale(2);
     }
 
-    .social-link .social-icon-path { fill: gray; }
-    .social-link:hover .social-icon-path { fill: #6aa4f8; }
+    .social-link .social-icon-path { fill: gray; transition: 0.2s; }
+    .social-link:hover .social-icon-path { fill: #4078c0; }
     </style>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
